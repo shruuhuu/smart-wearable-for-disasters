@@ -47,7 +47,7 @@ The Firebase Realtime Database follows this structure:
       "sensor_temp": 36.5,
       "sensor_smoke": 150,
       "motion_detected": 1,
-      "predicted_probability": "High"
+      "predicted_probability": 2
     }
   }
 }
@@ -96,7 +96,7 @@ db.reference(f"/readings/{entry_id}").update({"predicted_probability": result})
 When the script runs, it fetches real-time survivor data, predicts their survival probability, and updates Firebase. Example:
 ```bash
 Raw Firebase Data: {"latitude": 12.9716, "longitude": 77.5946, "sensor_temp": 36.5}
-Predicted Survivor Probability: High
+Predicted Survivor Probability: 2
 Updated Firebase entry: /readings/entry1
 ```
 
