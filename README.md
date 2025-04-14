@@ -2,7 +2,7 @@
 ## Survivor Prediction System - Firebase & ML Integration
 
 ## Overview
-This project integrates ESP32 sensor data, Firebase Realtime Database, and an AI Model (Random Forest) to predict survivor probability in disaster scenarios. The system continuously fetches sensor data from Firebase, processes it through a trained ML model, and updates the database with the predicted probability.
+This project integrates ESP32 sensor data, Firebase Realtime Database, and an ML Model (Random Forest) to predict survivor probability in disaster scenarios. The system continuously fetches sensor data from Firebase, processes it through a trained ML model, and updates the database with the predicted probability.
 
 ## Project Structure
 ```md
