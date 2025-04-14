@@ -1,4 +1,4 @@
-# smart-wearable-for-disasters
+# Smart Wearable for Disasters
 ## Survivor Prediction System - Firebase & ML Integration
 
 ## Overview
