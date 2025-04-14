@@ -1,5 +1,5 @@
 # smart-wearable-for-disasters
-# Survivor Prediction System - Firebase & AI Integration
+## Survivor Prediction System - Firebase & ML Integration
 
 ## Overview
 This project integrates ESP32 sensor data, Firebase Realtime Database, and an AI Model (Random Forest) to predict survivor probability in disaster scenarios. The system continuously fetches sensor data from Firebase, processes it through a trained ML model, and updates the database with the predicted probability.
