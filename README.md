@@ -4,15 +4,6 @@
 ## Overview
 This project integrates ESP32 sensor data, Firebase Realtime Database, and an ML Model (Random Forest) to predict survivor probability in disaster scenarios. The system continuously fetches sensor data from Firebase, processes it through a trained ML model, and updates the database with the predicted probability.
 
-## Project Structure
-```md
-📁 survivor_prediction_system
-│── 📄 main.py                # Python script for Firebase & AI model integration
-│── 📄 survivor_prediction_model.pkl  # Pre-trained AI model
-│── 📄 basictest-c7678-firebase-adminsdk.json  # Firebase credentials
-│── 📄 README.md              # Project documentation
-```
-
 ## Hardware Components
 - **ESP32** - Microcontroller for processing and wireless communication
 - **Motion Sensor** - Detects movement to assess survivor activity
