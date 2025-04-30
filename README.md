@@ -12,14 +12,14 @@ This project integrates ESP32 sensor data, Firebase Realtime Database, and an ML
 - **GPS Module** - Provides real-time location tracking
 
 ## Software & ML Components
-- **Firebase Realtime Database** - Stores survivor data and AI predictions
+- **Firebase Realtime Database** - Stores survivor data and ML predictions
 - **Python & Firebase Admin SDK** - Fetches sensor data and updates predictions
 - **Machine Learning Model (Random Forest)** - Predicts survivor probability
 - **NumPy & Joblib** - Handles data preprocessing and model execution
 
 ## Features
 - Fetches real-time survivor data from Firebase  
-- Uses AI (Random Forest) to predict survivor probability  
+- Uses ML (Random Forest) to predict survivor probability  
 - Updates probability back into Firebase without overwriting data  
 - Processes multiple survivor entries dynamically  
 - Runs continuously and updates predictions every 10 seconds  
@@ -71,7 +71,7 @@ data = ref.get()
 ```
 
 ### Predict Survivor Probability
-The AI model processes each survivor's data:
+The ML model processes each survivor's data:
 ```python
 X = np.array([[data.get('latitude', 0.0), data.get('longitude', 0.0), data.get('sensor_temp', 25.0)]])
 prediction = model.predict(X)
@@ -90,13 +90,6 @@ Raw Firebase Data: {"latitude": 12.9716, "longitude": 77.5946, "sensor_temp": 36
 Predicted Survivor Probability: 2
 Updated Firebase entry: /readings/entry1
 ```
-
-## Next Steps
-- Integrate a front-end dashboard to display survivor predictions.  
-- Enhance AI model with more training data for improved accuracy.  
-- Optimize Firebase data structure for large-scale deployments.  
-
-Developed for real-time disaster survivor tracking and rescue optimization.
 
 
 
